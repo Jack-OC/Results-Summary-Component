@@ -14,8 +14,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -63,4 +61,4 @@ I will contine to research more about JSON, and how to use fetch() to dynamicall
 
 ### Useful resources
 
-- [Example resource 1](https://howtocreateapps.com/fetch-and-display-json-html-javascript/) - This resource helped me to find a way to display the JSON data in HTML.
+- [Example resource](https://howtocreateapps.com/fetch-and-display-json-html-javascript/) - This resource helped me to find a way to display the JSON data in HTML.
