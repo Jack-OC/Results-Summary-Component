@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]([https://github.com/Jack-OC/Result-Summary-Component](https://github.com/Jack-OC/Results-Summary-Component))
-- Live Site URL: [Live Site URL]( [https://jack-oc.github.io/Result-Summary-Component/](https://jack-oc.github.io/Results-Summary-Component/))
+- Solution URL: [Solution URL](https://github.com/Jack-OC/Result-Summary-Component](https://github.com/Jack-OC/Results-Summary-Component)
+- Live Site URL: [Live Site URL](https://jack-oc.github.io/Result-Summary-Component/](https://jack-oc.github.io/Results-Summary-Component/)
 
 ## My process
 
