@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;700;800&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --PaleRed: #ff57570d;;
+    --PaleOrangeyYellow: #ffb01f0d;
+    --PaleGreenTeal: #00bd910d;
+    --PaleCobaltBlue: #1125d40d;
+
+
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlueCircle: hsla(256, 72%, 46%, 1);
+    --PersianBlueCircle: hsla(241, 72%, 46%, 0);
+
+    --fw-black: 800;
+    --fw-bold: 700;
+    --fw-regular: 500;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--White);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.result-summary {
+    max-width: 675px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 10px 25px 30px hsla(241, 100%, 89%, 0.3);
+}
+
+.result {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 3.5rem;
+    border-radius: 25px;
+    color: var(--LightLavender);
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--VioletBlueCircle), var(--PersianBlueCircle));
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: var(--fw-regular);
+}
+
+.circle span {
+    color: var(--White);
+    font-size: 4.2rem;
+    font-weight: var(--fw-black);
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.comment {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: var(--fw-bold);
+}
+
+.result-info p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+}
+
+.button {
+    line-height: 1;
+    color: var(--White);
+    border: none;
+    border-radius: 100vw;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background: var(--DarkGrayBlue);
+}
+
+.button:hover,
+.button:focus-visible {
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+
+.summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+#summary-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+#item0 {
+    background-color: var(--PaleRed);
+    color: var(--LightRed)
+}
+
+#item1 {
+    background-color: var(--PaleOrangeyYellow);
+    color: var(--OrangeyYellow);
+}
+
+#item2 {
+    background-color: var(--PaleGreenTeal);
+    color: var(--GreenTeal);
+}
+
+#item3 {
+    background-color: var(--PaleCobaltBlue);
+    color: var(--CobaltBlue);
+}
+
+.icon-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: var(--fw-regular);
+}
+
+.item-score{
+    color: #a8a8a8;
+    font-weight: var(--fw-regular);
+}
+
+.item-score span{
+    color: var(--DarkGrayBlue);
+    font-weight: var(--fw-bold);
+} 
+
+@media (max-width: 375px) {
+    .result-summary {
+        flex-direction: column;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+        gap: 1.2rem;
+        padding: 2rem;
+    }
+
+    .section-title{
+        font-size: 1.1rem;
+    }
+
+    .circle{
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle span{
+        font-size: 3.2rem;
+    }
+
+    .comment{
+        font-size: 1.4rem;
+    }
+}
