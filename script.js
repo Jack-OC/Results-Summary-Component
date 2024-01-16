@@ -16,7 +16,7 @@ function appendData(data) {
         div.setAttribute("id","item"+i)
         div.innerHTML = `
                 <div class="icon-category">
-                    <img src="${data[i].icon}" />
+                    <img src="${data[i].icon}" alt="${data[i].category} icon" />
                     <span>${data[i].category}</span>
                 </div>
                 <div class="item-score"><span>${data[i].score}</span> / 100</div>`
